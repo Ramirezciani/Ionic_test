@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      RamirezCiani APP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-button color="tertiary">Ingresar</ion-button>
+    <br>
+    <ion-img class="ion-padding" src="https://images3.alphacoders.com/954/thumb-1920-954241.jpg">Foto</ion-img>
+    <br>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="schedule">
+          <ion-icon name="calendar"></ion-icon>
+          <ion-label>Schedule</ion-label>
+          <ion-badge>6</ion-badge>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="speakers">
+          <ion-icon name="person-circle"></ion-icon>
+          <ion-label>Speakers</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="map">
+          <ion-icon name="map"></ion-icon>
+          <ion-label>Map</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="about">
+          <ion-icon name="information-circle"></ion-icon>
+          <ion-label>About</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
+</ion-content>
