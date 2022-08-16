@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      RamirezCiani APP
+      Paulo Ramirez
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,33 +9,38 @@
 <ion-content [fullscreen]="true">
 
   <div id="container">
-    <ion-button color="tertiary">Ingresar</ion-button>
-    <br>
-    <ion-img class="ion-padding" src="https://images3.alphacoders.com/954/thumb-1920-954241.jpg">Foto</ion-img>
-    <br>
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="schedule">
-          <ion-icon name="calendar"></ion-icon>
-          <ion-label>Schedule</ion-label>
-          <ion-badge>6</ion-badge>
-        </ion-tab-button>
     
-        <ion-tab-button tab="speakers">
-          <ion-icon name="person-circle"></ion-icon>
-          <ion-label>Speakers</ion-label>
-        </ion-tab-button>
+
+    <ul>
+      <li><a href="#inicio">Home</a></li>
+      <li><a href="#inicio">Contact</a></li>
+      <li><a href="#inicio">About Me </a></li>
+     </ul>
+  </div>
+  
+  <div id="login"> 
+    <form action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <ion-img src="https://www.w3schools.com/howto/img_avatar2.png" class="imglog"></ion-img>
+      </div>
     
-        <ion-tab-button tab="map">
-          <ion-icon name="map"></ion-icon>
-          <ion-label>Map</ion-label>
-        </ion-tab-button>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
     
-        <ion-tab-button tab="about">
-          <ion-icon name="information-circle"></ion-icon>
-          <ion-label>About</ion-label>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
   </div>
 </ion-content>
